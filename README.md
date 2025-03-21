@@ -22,7 +22,11 @@ Inspiration: https://vanschneider.com/blog/sensory-surreal-worlds-teamlab/
 Our website:
 https://titustsang2000.wixsite.com/sc05-grp-8-dti
 
-<video src='https://youtu.be/yFxSdek6QW4' width=180/>
 
 
+
+
+
+
+https://github.com/user-attachments/assets/cc787f0e-6ec4-4e53-a5a1-776efb8ca336
 
