@@ -283,7 +283,7 @@ class CreateMaterial:
 
     def add_Image_Texture(self, image_filepath):
         texImage = self.material.node_tree.nodes.new('ShaderNodeTexImage')
-        texImage.image = bpy.data.images.load("C:\\Users\\myName\\Downloads\\Textures\\Downloaded\\flooring5.jpg")
+        # texImage.image = bpy.data.images.load("C:\\Users\\myName\\Downloads\\Textures\\Downloaded\\flooring5.jpg")
         self.material.node_tree.links.new(self.principled_BSDF.inputs['Base Color'], texImage.outputs['Color'])
         
 class Spawn_Duplicate:
@@ -374,7 +374,7 @@ class Follow_Path:
 fishCollection = bpy.ops.collection.create(name= "Fish Collection")
 bpy.context.scene.collection.children.link(bpy.data.collections["Fish Collection"])
 bpy.context.view_layer.active_layer_collection = bpy.context.view_layer.layer_collection.children[-1]
-fish_path = "C:\\Users\\ongxu\\Downloads\\BlenderPython (1)\\BlenderPython\\fishes.blend"
+fish_path = "blender_fishes/Blender Scene Files/fishes.blend"
 fish = Fish(file_path=fish_path, inner_path="Object", object_name="Fish1")
 fish.objectInstance = fish.append()
 fish2 = Fish(file_path=fish_path, inner_path="Object", object_name="Fish2")
@@ -389,7 +389,7 @@ bpy.context.view_layer.active_layer_collection = bpy.context.view_layer.layer_co
 bpy.data.collections["Paths_and_Rigs"].objects.unlink(bpy.data.objects[fish3.object_name])
 # fish_path1 =  Fish(file_path="C:\\Users\\thnga\\Desktop\\BlenderPython\\fish_rigs.blend", inner_path="Object", object_name="Fish_Path1")
 # fish_path1.append()
-fish_rig_path = "C:\\Users\\ongxu\\Downloads\\BlenderPython (1)\\BlenderPython\\fish_rigs.blend"
+fish_rig_path = "blender_fishes/Blender Scene Files/fish_rigs.blend"
 fish1_Rig = Fish_Rig(file_path=fish_rig_path, inner_path="Object", armature_object_name="Fish_Rig1", new_name="Fish_Rig1")
 fish1_Rig.armature_object = fish1_Rig.append()
 # fish_path2 =  Fish(file_path="C:\\Users\\thnga\\Desktop\\BlenderPython\\fish_rigs.blend", inner_path="Object", object_name="Fish_Path2")
@@ -587,7 +587,7 @@ def update_curve_evaluation_time(curve_index, fps):
 import time
 
 from pathlib import Path
-coor_path = 'C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\coords.txt'
+coor_path = "blender_fishes/Run Simulation/coords.txt"
 f = Path(bpy.path.abspath(coor_path))
 # plane = bpy.data.objects["Plane"]
 cube = bpy.data.objects["Cube"]

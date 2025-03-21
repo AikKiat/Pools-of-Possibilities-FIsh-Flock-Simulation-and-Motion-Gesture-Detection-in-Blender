@@ -44,7 +44,7 @@ class KeyPointClassifier(object):
     def __init__(
         self,
         # change
-        model_path="C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\model\\keypoint_classifier\\keypoint_classifier.tflite",
+        model_path="C:\\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\model\\keypoint_classifier\\keypoint_classifier.tflite",
         num_threads=1,
     ):
         self.interpreter = tf.lite.Interpreter(model_path=model_path,
@@ -78,7 +78,7 @@ class PointHistoryClassifier(object):
 
         self,
         # change
-        model_path="C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\model\\point_history_classifier\\point_history_classifier.tflite",
+        model_path="C:\\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\model\\point_history_classifier\\point_history_classifier.tflite",
         score_th=0.5,
         invalid_value=0,
         num_threads=1,
@@ -195,7 +195,7 @@ def main():
 
     # Read labels ###########################################################
     # change
-    with open('C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\model\\keypoint_classifier\\keypoint_classifier_label.csv',
+    with open("C:\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\model\\keypoint_classifier\\keypoint_classifier_label.csv",
               encoding='utf-8-sig') as f:
         keypoint_classifier_labels = csv.reader(f)
         keypoint_classifier_labels = [
@@ -203,7 +203,7 @@ def main():
         ]
     # change
     with open(
-            "C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\model\\point_history_classifier\\point_history_classifier_label.csv",
+            "C:\\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\model\\point_history_classifier\\point_history_classifier_label.csv",
             encoding='utf-8-sig') as f:
         point_history_classifier_labels = csv.reader(f)
         point_history_classifier_labels = [
@@ -288,7 +288,7 @@ def main():
                     
                     give_food = keypoint_classifier_labels[hand_sign_id] == 'GiveFood'
                     rock = keypoint_classifier_labels[hand_sign_id] == 'Close'
-                    with open('C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\coords.txt', "+w") as f:
+                    with open("C:\\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\coords.txt", "+w") as f:
                         f.write(f"{brect[0]} {brect[1]} {int(give_food)} {int(rock)}")
                             
                     
@@ -325,7 +325,7 @@ def main():
                     )
             else:
                 point_history.append([0, 0])
-                file_path = 'C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\coords.txt'
+                file_path = "C:\\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\coords.txt"
 
                 with open(file_path, "r+") as f:
                     lines = f.readline()
@@ -454,13 +454,13 @@ def logging_csv(number, mode, landmark_list, point_history_list):
         pass
     if mode == 1 and (0 <= number <= 9):
         # change
-        csv_path = "C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\model\\keypoint_classifier\\keypoint.csv"
+        csv_path = "C:\\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\model\\keypoint_classifier\\keypoint.csv"
         with open(csv_path, 'a', newline="") as f:
             writer = csv.writer(f)
             writer.writerow([number, *landmark_list])
     if mode == 2 and (0 <= number <= 9):
         # change
-        csv_path = "C:\\Users\\ongxu\\OneDrive\\Documents\\coding\\projects\\python_projects\\flock\\model\\point_history_classifier\\point_history.csv"
+        csv_path = "C:\\Users\\thnga\\Desktop\\fish-flock-simulation\\blender_fishes\\model\\point_history_classifier\\point_history.csv"
         with open(csv_path, 'a', newline="") as f:
             writer = csv.writer(f)
             writer.writerow([number, *point_history_list])
