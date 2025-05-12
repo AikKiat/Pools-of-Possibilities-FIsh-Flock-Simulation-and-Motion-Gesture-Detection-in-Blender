@@ -10,7 +10,9 @@ Inside:
 
 Requirements:
 **Blender Development addon for VSCode.** Used to create a new Blender Scene and run our Blender python scripts. https://marketplace.visualstudio.com/items?itemName=JacquesLucke.blender-development
+
 Run Motion_Gesture_Detect.py first to start the motion detection service.
+
 Open **Blender_Scene_Initialiser.py, CRTL+P to access Blender Python's START SCENE command, and then RUN SCRIPT.** The scene should be set up automatically. Feel free to adjust any of the meshes such as the floor plane.
 Press the Animation Play Button in Blender, or simply tap the space bar, and **let the simulation begin.**
 
