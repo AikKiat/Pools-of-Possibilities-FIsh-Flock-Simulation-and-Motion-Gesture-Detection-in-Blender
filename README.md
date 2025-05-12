@@ -2,7 +2,7 @@
 
 **Access the main files in the folder <<fish-flock-simulation>>**
 Inside:
-1. Our trained Tensorflowlife models are found in <<model>>
+1. Our trained Tensorflowlite models are found in <<model>>
 2. Blender files containing the .blend files of our custom made Fish models, and rigs are in <<Blender Scene Files>>, the ojects of each .blend imported into a new Blender scene via our script
 3. <<Miscelleanous>> Contains old random test files
 
