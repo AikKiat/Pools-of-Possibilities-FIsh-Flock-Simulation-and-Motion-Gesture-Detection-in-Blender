@@ -6,7 +6,7 @@ Inside:
 2. Blender files containing the .blend files of our custom made Fish models, and rigs are in **Blender Scene Files**, the ojects of each .blend imported into a new Blender scene via our script
 3. **Miscelleanous** Contains old random test files
 
-**4. Try everything out in **Run Simulation**
+4. Try everything out in **Run Simulation**
 Requirements:
 **Blender Development addon for VSCode.** Used to create a new Blender Scene and run our Blender python scripts. https://marketplace.visualstudio.com/items?itemName=JacquesLucke.blender-development
 Run Motion_Gesture_Detect.py first to start the motion detection service.
