@@ -1,11 +1,29 @@
-**A fun project utilising Motion Gesture Detection**, to control the behaviour of **virtual fishes in a fully custom-built Blender scene**, initialised via code using **Blender's python .bpy python scripting library. **
+#Pools of Possibilities. Virtual Fishes Following Hand Gestures.
+ 
+ fun project utilising Motion Gesture Detection**, to control the behaviour of **virtual fishes in a fully custom-built Blender scene**, initialised via code using **Blender's python .bpy python scripting library. **
+
+
+## Guide
+https://github.com/user-attachments/assets/7dcb6640-047b-4b43-ae98-f34eda734a53
+
+## Feed
+https://github.com/user-attachments/assets/67234f7a-24f8-4d3a-b70e-dfdc4f59a307
+
+"https://github.com/user-attachments/assets/1222689c-dce2-45af-95eb-6c0102682162"
+
+<h2>Forge Connections <img src="https://github.com/user-attachments/assets/f96033c2-7eb9-4c4a-9a50-aec84dbf0995" style = "width:4rem; height:4rem"></h2>
+
+https://github.com/user-attachments/assets/8ee4e189-99c2-454f-98c6-36094303c504
+
+
+
+ 
 
 **Access the main files in the folder fish-flock-simulation**
 Inside:
 1. Our trained Tensorflowlite models are found in **model**
 2. Blender files containing the .blend files of our custom made Fish models, and rigs are in **Blender Scene Files**, the ojects of each .blend imported into a new Blender scene via our script
 3. **Miscelleanous** Contains old random test files
-
 4. Try everything out in **Run Simulation**
 
 Requirements:
@@ -25,13 +43,4 @@ Inspiration: https://vanschneider.com/blog/sensory-surreal-worlds-teamlab/
 Our website:
 https://titustsang2000.wixsite.com/sc05-grp-8-dti
 
-Example Test Video:
-https://youtu.be/JwkDctVayhs
-
-
-
-
-
-
-https://github.com/user-attachments/assets/cc787f0e-6ec4-4e53-a5a1-776efb8ca336
 
