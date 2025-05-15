@@ -1,6 +1,6 @@
 # Pools of Possibilities. Virtual Fishes Following Hand Gestures.
  
-# School Project utilising Motion Gesture Detection, to control the behaviour of virtual fishes in a fully custom-built Blender scene, initialised via code using Blender's python .bpy python scripting library.
+### School Project utilising Motion Gesture Detection, to control the behaviour of virtual fishes in a fully custom-built Blender scene, initialised via code using Blender's python .bpy python scripting library.
 
 
 <h2>Guide <img src="https://github.com/user-attachments/assets/d15f3fc7-d160-42eb-a3b2-a2520b8776d6" style="width:3rem; height:3rem"></h2>
